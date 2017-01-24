@@ -4,26 +4,76 @@
     android:layout_height="match_parent">
 
     <TextView
+        android:id="@+id/suyeon1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:background="#5e626b"
-        android:text="한수연"
-        android:textSize="32sp" />
+        android:layout_centerHorizontal="true"
+        android:background="#dd5353"
+        android:text="한수연1"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/suyeon1"
+        android:text="왼쪽"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/suyeon1"
+        android:text="오른쪽"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/suyeon2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#52adc0"
+        android:text="한수연2"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/suyeon2"
+        android:text="위쪽"
+        android:textSize="24sp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="#52adc0"
-        android:text="한수연"
-        android:textSize="32sp" />
+        android:layout_toRightOf="@id/suyeon2"
+        android:text="오른쪽"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/suyeon3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="#7ac052"
+        android:text="한수연3"
+        android:textSize="24sp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#745cae"
-        android:text="한수연"
-        android:textSize="32sp" />
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@id/suyeon3"
+        android:text="왼쪽"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/suyeon3"
+        android:layout_alignParentEnd="true"
+        android:text="위쪽"
+        android:textSize="24sp" />
 
 </RelativeLayout>
