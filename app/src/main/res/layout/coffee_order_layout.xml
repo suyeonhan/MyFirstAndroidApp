@@ -1,73 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_marginLeft="16dp"
-    android:layout_marginTop="16dp"
-    android:orientation="vertical">
-
-    <!--text? = 안드로이드에서 지정해놓은 폰트 설정키-->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="Quantity"
-        android:textAllCaps="true"
-        android:textSize="16sp" />"
-
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
 
-        <Button
-            android:id="@+id/minus_button"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:text="-" />
+        <!--text? = 안드로이드에서 지정해놓은 폰트 설정키-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Toppings"
+            android:textAllCaps="true"
+            android:textSize="16sp" />"
+
+        <CheckBox
+            android:id="@+id/creme_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Whipped Creme"
+            android:textAppearance="?android:textAppearanceSmall" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Quantity"
+            android:textAllCaps="true"
+            android:textSize="16sp" />"
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/minus_button"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:text="-" />
+
+
+            <TextView
+                android:id="@+id/quantity_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/plus_button"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:text="+" />
+
+        </LinearLayout>
 
 
         <TextView
-            android:id="@+id/quantity_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="8dp"
-            android:paddingRight="8dp"
-            android:text="0"
-            android:textColor="#000000"
-            android:textSize="16sp" />
+            android:layout_marginTop="16dp"
+            android:text="Price"
+            android:textAllCaps="true" />
 
+        <TextView
+            android:id="@+id/result_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Total : $15\nThank you!"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/comment_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="요청사항" />
+        <!--//버튼은 무조건 대문자, 소문자로 변환시 = textAllCaps-->
         <Button
-            android:id="@+id/plus_button"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:text="+" />
+            android:id="@+id/order_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="order" />
 
     </LinearLayout>
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Price"
-        android:textAllCaps="true" />
-
-    <TextView
-        android:id="@+id/result_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Total : $15\nThank you!"
-        android:textColor="#000000" />
-
-    <!--//버튼은 무조건 대문자, 소문자로 변환시 = textAllCaps-->
-    <Button
-        android:id="@+id/order_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="order" />
-
-</LinearLayout>
+</ScrollView>
